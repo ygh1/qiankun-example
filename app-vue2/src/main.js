@@ -22,7 +22,7 @@ function render(props = {}) {
   instance = new Vue({
     router,
     render: (h) => h(App),
-  }).$mount(container ? container.querySelector('#app') : '#app');
+  }).$mount(container ? container.querySelector('#app-vue2') : '#app-vue2');
 }
 
 // 独立运行时

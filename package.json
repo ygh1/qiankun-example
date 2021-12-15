@@ -4,6 +4,13 @@
   "description": "main 主应用入口 vue单页应用，主应用可以使用任何框架实现",
   "main": "index.js",
   "scripts": {
+    "install": "npm-run-all --serial install:*",
+    "install:main": "cd main && npm i",
+    "install:app-angular": "cd app-angular && npm i",
+    "install:app-react": "cd app-react && npm i",
+    "install:app-vue2": "cd app-vue2 && npm i",
+    "install:purehtml": "cd main && npm i",
+    "install:app-manual": "cd app-manual && npm i",
     "start": "npm-run-all --parallel start:*",
     "start:main": "cd main && npm start",
     "start:app-angular": "cd app-angular && npm start",

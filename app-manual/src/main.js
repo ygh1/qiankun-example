@@ -21,7 +21,7 @@ function render(props = {}) {
   instance = new Vue({
     router,
     render: (h) => h(App),
-  }).$mount(container ? container.querySelector('#app') : '#app');
+  }).$mount(container ? container.querySelector('#app-manual') : '#app-manual');
 }
 
 // 独立运行时
@@ -37,7 +37,7 @@ export async function mount(props) {
   render(props);
 }
 export async function update(props) {
-  render(props);
+  console.log(props)
 }
 export async function unmount() {
   instance.$destroy();
