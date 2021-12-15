@@ -14,7 +14,6 @@ let instance = null;
 function render(props = {}) {
   const { container } = props;
   router = new VueRouter({
-    base: window.__POWERED_BY_QIANKUN__ ? '/app-manual/' : '/',
     mode: 'history',
     routes,
   });
@@ -35,6 +34,9 @@ export async function bootstrap() {
 }
 export async function mount(props) {
   console.log('[vue] props from main framework', props);
+  render(props);
+}
+export async function update(props) {
   render(props);
 }
 export async function unmount() {

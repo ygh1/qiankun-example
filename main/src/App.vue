@@ -6,7 +6,7 @@
       <router-link to="/app-vue2">vue</router-link>
       <router-link to="/app-angular">angular</router-link>
       <router-link to="/app-purehtml">purehtml</router-link>
-      <router-link to="/about">手动加载</router-link>
+      <router-link to="/some">手动加载</router-link>
     </div>
     <router-view></router-view>
     <div id="micro-container"></div>

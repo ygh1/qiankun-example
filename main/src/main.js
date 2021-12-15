@@ -11,30 +11,30 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 registerMicroApps([
-  // {
-  //   name: 'reactApp',
-  //   entry: '//localhost:8081',
-  //   container: '#micro-container',
-  //   activeRule: '/app-react',
-  // },
-  // {
-  //   name: 'vueApp',
-  //   entry: '//localhost:8082',
-  //   container: '#micro-container',
-  //   activeRule: '/app-vue2',
-  // },
+  {
+    name: 'reactApp',
+    entry: '//localhost:8081',
+    container: '#micro-container',
+    activeRule: '/app-react',
+  },
+  {
+    name: 'vueApp',
+    entry: '//localhost:8082',
+    container: '#micro-container',
+    activeRule: '/app-vue2',
+  },
   {
     name: 'angularApp',
     entry: '//localhost:8083',
     container: '#micro-container',
     activeRule: '/app-angular',
   },
-  // {
-  //   name: 'purehtml',
-  //   entry: '//localhost:8084',
-  //   container: '#micro-container',
-  //   activeRule: '/app-purehtml',
-  // },
+  {
+    name: 'purehtml',
+    entry: '//localhost:8084',
+    container: '#micro-container',
+    activeRule: '/app-purehtml',
+  },
 ]);
 // 启动 qiankun
 start();

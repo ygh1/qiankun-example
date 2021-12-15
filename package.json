@@ -7,7 +7,7 @@
     "start": "npm-run-all --parallel start:*",
     "start:main": "cd main && npm start",
     "start:app-angular": "cd app-angular && npm start",
-    "start:app-react": "cd app-angular && npm start",
+    "start:app-react": "cd app-react && npm start",
     "start:app-vue2": "cd app-vue2 && npm start",
     "start:purehtml": "cd purehtml && npm start",
     "start:app-manual": "cd app-manual && npm start"
