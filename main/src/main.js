@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-import router from '../router/index'
+import router from './router/index'
 
 Vue.config.productionTip = false
 
@@ -37,7 +37,9 @@ registerMicroApps([
   },
 ]);
 // 启动 qiankun
-start();
+start({
+  prefetch: false
+});
 
 new Vue({
   router,
