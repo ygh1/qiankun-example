@@ -5,6 +5,7 @@ import router from '../router/index'
 
 Vue.config.productionTip = false
 
+import 'zone.js';
 import { registerMicroApps, start } from 'qiankun';
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
@@ -22,12 +23,12 @@ registerMicroApps([
     container: '#micro-container',
     activeRule: '/app-vue2',
   },
-  // {
-  //   name: 'angularApp',
-  //   entry: '//localhost:8083',
-  //   container: '#micro-container',
-  //   activeRule: '/app-angular',
-  // },
+  {
+    name: 'angularApp',
+    entry: '//localhost:8083',
+    container: '#micro-container',
+    activeRule: '/app-angular',
+  },
 ]);
 // 启动 qiankun
 start();
