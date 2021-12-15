@@ -1,0 +1,29 @@
+{
+  "name": "qiankun-example",
+  "version": "1.0.0",
+  "description": "main 主应用入口 vue单页应用，主应用可以使用任何框架实现",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel start:*",
+    "start:main": "cd main && npm start",
+    "start:app-angular": "cd app-angular && npm start",
+    "start:app-react": "cd app-angular && npm start",
+    "start:app-vue2": "cd app-vue2 && npm start",
+    "start:purehtml": "cd purehtml && npm start",
+    "start:app-manual": "cd app-manual && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ygh1/qiankun-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ygh1/qiankun-example/issues"
+  },
+  "homepage": "https://github.com/ygh1/qiankun-example#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
