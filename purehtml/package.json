@@ -1,0 +1,14 @@
+{
+  "name": "purehtml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "entry.js",
+  "scripts": {
+    "start": "http-server --port 8084 --cors"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.0.0"
+  }
+}

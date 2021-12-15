@@ -29,6 +29,12 @@ registerMicroApps([
     container: '#micro-container',
     activeRule: '/app-angular',
   },
+  {
+    name: 'purehtml',
+    entry: '//localhost:8084',
+    container: '#micro-container',
+    activeRule: '/app-purehtml',
+  },
 ]);
 // 启动 qiankun
 start();

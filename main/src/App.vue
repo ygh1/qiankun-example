@@ -5,6 +5,7 @@
       <router-link to="/app-react">react</router-link>
       <router-link to="/app-vue2">vue</router-link>
       <router-link to="/app-angular">angular</router-link>
+      <router-link to="/app-purehtml">purehtml</router-link>
     </div>
     <router-view></router-view>
     <div id="micro-container"></div>
