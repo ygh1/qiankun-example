@@ -7,14 +7,25 @@ Vue.config.productionTip = false
 // new Vue({
 //   render: h => h(App),
 // }).$mount('#app')
-
+const isProd = process.env.NODE_ENV === 'production'
+function getBase () {
+  if (isProd) {
+    if (window.__POWERED_BY_QIANKUN__) {
+      return '/child/app-vue2/'
+    } else {
+      return '/app-vue2/'
+    }
+  } else {
+    return '/'
+  }
+}
 
 let router = null;
 let instance = null;
 function render(props = {}) {
   const { container } = props;
   router = new VueRouter({
-    base: window.__POWERED_BY_QIANKUN__ ? '/app-vue2/' : '/',
+    base: getBase(),
     mode: 'history',
     routes,
   });

@@ -6,10 +6,23 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom'
 
 
+const isProd = process.env.NODE_ENV === 'production'
+function getBase () {
+  if (isProd) {
+    if (window.__POWERED_BY_QIANKUN__) {
+      return '/app-react'
+    } else {
+      return '/app-react'
+    }
+  } else {
+    return '/'
+  }
+}
+
 function render(props) {
   const { container } = props;
   ReactDOM.render(
-    <BrowserRouter basename="/app-react">
+    <BrowserRouter basename={getBase()}>
       <App />
     </BrowserRouter>,
     container ? container.querySelector('#root') : document.querySelector('#root'));

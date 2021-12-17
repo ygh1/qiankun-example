@@ -13,13 +13,13 @@ Vue.use(VueRouter)
 registerMicroApps([
   {
     name: 'reactApp',
-    entry: '//localhost:8081',
+    entry: process.env.VUE_APP_REACT,
     container: '#micro-container',
     activeRule: '/app-react',
   },
   {
     name: 'vueApp',
-    entry: '//localhost:8082',
+    entry: process.env.VUE_APP_VUE2,
     container: '#micro-container',
     activeRule: '/app-vue2',
   },

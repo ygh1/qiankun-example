@@ -17,7 +17,11 @@
     "start:app-react": "cd app-react && npm start",
     "start:app-vue2": "cd app-vue2 && npm start",
     "start:purehtml": "cd purehtml && npm start",
-    "start:app-manual": "cd app-manual && npm start"
+    "start:app-manual": "cd app-manual && npm start",
+    "build": "npm-run-all --serial build:*",
+    "build:main": "cd main && npm run build",
+    "build:app-react":"cd app-react && npm run build",
+    "build:app-vue2":"cd app-vue2 && npm run build"
   },
   "repository": {
     "type": "git",
