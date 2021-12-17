@@ -1,7 +1,7 @@
 const { name } = require('./package');
 const isProd = process.env.NODE_ENV === 'production'
 module.exports = {
-  publicPath: isProd ? '/child/app-vue2' : '/',
+  publicPath: isProd ? '/app1/' : '/',
   devServer: {
     headers: {
       'Access-Control-Allow-Origin': '*',
