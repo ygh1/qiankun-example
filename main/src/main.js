@@ -1,3 +1,4 @@
+import 'zone.js';
 import Vue from 'vue'
 import App from './App.vue'
 
@@ -5,7 +6,7 @@ import router from './router/index'
 
 Vue.config.productionTip = false
 
-import 'zone.js';
+
 import { registerMicroApps, start } from 'qiankun';
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
