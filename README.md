@@ -6,3 +6,19 @@
 3. angular
 4. 非webpack打包
 5. 手动加载子应用
+
+### 安装
+```
+npm run install
+```
+
+### 启动
+```
+npm run start
+```
+
+### 构建
+```
+npm run build
+```
+根据发布环境不同，设置路由base以及publicPath
